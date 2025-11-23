@@ -2,19 +2,20 @@
 <html lang="tr">
 <head>
   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-EJL307FT68');
-</script>
+    gtag('config', 'G-EJL307FT68');
+  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Betoogle — Güncel giriş adresi bul</title>
   <meta name="description" content="Betoogle, bahis/casino sitelerinin güncel giriş adresini bulmanızı sağlar. Sahte linkleri filtreler. Para işlemi yoktur." />
+
   <style>
     * {
       box-sizing: border-box;
@@ -73,6 +74,7 @@
       margin: 6px 0;
     }
 
+    /* BUTON STİLİ */
     .btn {
       display: inline-block;
       background: #2ea44f;
@@ -156,30 +158,47 @@
       <li>❌ Bahis / para işlemi yoktur</li>
     </ul>
 
-    <a class="button" href="https://t.me/Betoogle_Bot" target="_blank" 
-   onclick="gtag('event', 'botu_baslat_tiklama');">
-    Botu Başlat
+    <!-- Botu Başlat BUTONU -->
+    <a
+      class="btn btn-primary"
+      href="https://t.me/Betoogle_Bot"
+      target="_blank"
+      onclick="gtag('event', 'botu_baslat_tiklama');"
+    >
+      Botu Başlat
     </a>
   </div>
 
   <div class="downloads">
-    <a class="button" href="assets/denemebonusu2025.xlsx" download
-   onclick="gtag('event', 'deneme_bonusu_excel');">
-    Deneme Bonusu (Excel)
+    <!-- Excel -->
+    <a
+      class="btn download-btn"
+      href="assets/denemebonusu2025.xlsx"
+      download
+      onclick="gtag('event', 'deneme_bonusu_excel');"
+    >
+      Deneme Bonusu (Excel)
     </a>
 
-
-    <a class="button" href="assets/Yatırımlı.png" download
-   onclick="gtag('event', 'deneme_bonusu_yatirimli_png');">
-    Deneme Bonusu (Yatırımlı PNG)
+    <!-- Yatırımlı PNG -->
+    <a
+      class="btn download-btn"
+      href="assets/Yatırımlı.png"
+      download
+      onclick="gtag('event', 'deneme_bonusu_yatirimli_png');"
+    >
+      Deneme Bonusu (Yatırımlı PNG)
     </a>
 
-
-    <a class="button" href="assets/Yatırımsız.png" download
-   onclick="gtag('event', 'deneme_bonusu_yatirimsiz_png');">
-    Deneme Bonusu (Yatırımsız PNG)
+    <!-- Yatırımsız PNG -->
+    <a
+      class="btn download-btn"
+      href="assets/Yatırımsız.png"
+      download
+      onclick="gtag('event', 'deneme_bonusu_yatirimsiz_png');"
+    >
+      Deneme Bonusu (Yatırımsız PNG)
     </a>
-
   </div>
 
   <footer>© 2025 Betoogle — This is a link verification tool.</footer>
