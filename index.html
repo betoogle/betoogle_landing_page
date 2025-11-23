@@ -5,163 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Betoogle — Güncel giriş adresi bul</title>
 <meta name="description" content="Betoogle, bahis/casino sitelerinin güncel giriş adresini bulmanızı sağlar. Sahte linkleri filtreler. Para işlemi yoktur." />
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
 
+<style>
     body {
         font-family: Arial, sans-serif;
         background: #0e0f12;
         color: #fff;
+        margin: 0;
+        padding: 0;
         text-align: center;
-    }
-
-    /* Masaüstü varsayılanı */
-    .page {
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 24px 16px 24px;
-        box-sizing: border-box;
     }
 
-    .hero {
-        max-width: 480px;
-        margin: 0 auto 24px;
+    .main-container {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
     }
 
     .hero img {
-        width: 120px;
-        margin-bottom: 24px;
-        border-radius: 16px;
+        width: 140px;
+        margin-bottom: 25px;
     }
 
-    .hero h1 {
-        margin: 12px 0 8px;
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
     }
 
-    .hero p {
-        margin: 0;
+    p.subtitle {
+        font-size: 16px;
+        opacity: 0.8;
+        margin-bottom: 30px;
     }
 
     .features {
         text-align: left;
-        max-width: 400px;
-        margin: 24px auto 0;
-        padding: 0;
-        list-style: none;
+        max-width: 420px;
+        margin: 0 auto;
+        font-size: 18px;
     }
 
     .features li {
-        margin: 6px 0;
+        margin: 10px 0;
+    }
+
+    .cta {
+        margin-top: 35px; /* 🔥 Botu Başlat butonu aşağı alındı */
+        margin-bottom: 50px;
     }
 
     .button {
-        display: inline-block;
+        display: block;
         background: #2ea44f;
         color: white;
-        padding: 12px 24px;
-        font-size: 16px;
+        padding: 15px 25px;
+        font-size: 19px;
         border-radius: 12px;
         text-decoration: none;
-        border: none;
-        cursor: pointer;
-        white-space: nowrap;
-    }
+        margin: 12px auto;
+        font-weight: bold;
 
-    .button-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: center;
-        margin-top: 24px;
-        margin-bottom: 16px;
+        /* 🔥 Mobilde sağa kaymayı engeller */
+        width: 100%;
+        max-width: 360px;
     }
 
     footer {
-        margin-top: 16px;
+        margin-top: 50px;
         opacity: 0.6;
         font-size: 14px;
+        padding-bottom: 20px;
     }
 
-    /* Mobil / küçük ekran düzeni */
-    @media (max-width: 768px) {
-
-        /* Yüksekliği sabitlemeyi bırak, scroll serbest olsun */
-        .page {
-            min-height: auto;
-            justify-content: flex-start;
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-
-        body {
-            height: auto;
-            overflow-y: auto;
-        }
-
-        .hero img {
-            width: 100px;
-            margin-bottom: 20px;
-        }
-
-        .button-row {
-            flex-direction: column;
-        }
-
-        .button-row .button {
-            width: 100%;
-            max-width: 320px;
-            margin: 0 auto;
-        }
-
-        .features {
-            max-width: 320px;
-        }
-    }
 </style>
 </head>
+
 <body>
 
-<div class="page">
+<div class="main-container">
 
     <div class="hero">
         <img src="https://raw.githubusercontent.com/cruoizei/betoogle-landing/main/assets/logo.png" alt="Betoogle Logo">
         <h1>Betoogle</h1>
-        <p>Bahis/casino sitelerinin güncel giriş adresini saniyede bul.</p>
-
-        <ul class="features">
-            <li>✅ Güncel giriş adresini bulur</li>
-            <li>✅ Sahte linkleri filtreler</li>
-            <li>❌ Bahis / para işlemi yoktur</li>
-        </ul>
-
-        <a class="button" href="https://t.me/Betoogle_Bot" target="_blank">
-            Botu Başlat
-        </a>
+        <p class="subtitle">Bahis/casino sitelerinin güncel giriş adresini saniyede bul.</p>
     </div>
 
-    <div class="button-row">
-        <a class="button" href="assets/denemebonusu2025.xlsx" download>
-            Deneme Bonusu (Excel)
-        </a>
+    <ul class="features">
+        <li>✅ Güncel giriş adresini bulur</li>
+        <li>✅ Sahte linkleri filtreler</li>
+        <li>❌ Bahis / para işlemi yoktur</li>
+    </ul>
 
-        <a class="button" href="assets/Yatırımlı.png" download>
-            Deneme Bonusu (Yatırımlı PNG)
-        </a>
-
-        <a class="button" href="assets/Yatırımsız.png" download>
-            Deneme Bonusu (Yatırımsız PNG)
-        </a>
-    </div>
-
-    <footer>© 2025 Betoogle — This is a link verification tool.</footer>
-
-</div>
-
-</body>
-</html>
+    <div class="ct
