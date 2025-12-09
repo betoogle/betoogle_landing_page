@@ -189,5 +189,79 @@
   <script>
     async function loadCSV() {
       try {
-        const res = await fetch('bonuslar.csv');
-        const text = await
+        const res = await fetch('Güncel Deneme Bonusu Listesi.csv');
+        const text = await res.text();
+
+        const lines = text.trim().split(/\r?\n/);
+        if (!lines.length) return;
+
+        // Türkçe Excel genelde ; kullanır, ona göre ayıralım
+        const firstLine = lines[0];
+        const delimiter = firstLine.includes(';') ? ';' : ',';
+
+        const rows = lines.map(line => line.split(delimiter));
+
+        const header = rows[0];
+        const dataRows = rows.slice(1).filter(r => r.join('').trim() !== '');
+
+        const table = document.getElementById('bonus-table');
+        table.innerHTML = '';
+
+        // THEAD
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+
+        header.forEach(col => {
+          const th = document.createElement('th');
+          th.textContent = col.trim();
+          headerRow.appendChild(th);
+        });
+
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        // TBODY
+        const tbody = document.createElement('tbody');
+
+        dataRows.forEach(cols => {
+          const tr = document.createElement('tr');
+
+          cols.forEach((col, index) => {
+            const td = document.createElement('td');
+            let val = col.trim();
+
+            // "durum" kolonuna rozet uygula
+            if (header[index] && header[index].toLowerCase().includes('durum')) {
+              const span = document.createElement('span');
+              const lower = val.toLowerCase();
+              span.textContent = val;
+
+              if (lower.includes('yatırımsız') || lower.includes('yatirimsiz')) {
+                span.className = 'badge yatirimsiz';
+              } else if (lower.includes('yatırımlı') || lower.includes('yatirimli')) {
+                span.className = 'badge yatirimli';
+              }
+
+              td.appendChild(span);
+            } else {
+              td.textContent = val;
+            }
+
+            tr.appendChild(td);
+          });
+
+          tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+      } catch (e) {
+        console.error(e);
+        document.querySelector('.table-wrapper').innerHTML =
+          '<p>Liste şu anda yüklenemedi. Lütfen daha sonra tekrar deneyin.</p>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCSV);
+  </script>
+</body>
+</html>
