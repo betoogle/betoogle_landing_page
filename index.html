@@ -53,12 +53,11 @@
       color: #fff !important;
       text-decoration: none;
     }
-    
+
     .subtitle a:hover {
       color: #ddd !important;
       text-decoration: underline;
     }
-
 
     h1 {
       margin: 0 0 6px;
@@ -106,7 +105,7 @@
       background: #101010;
     }
 
-    /* Kolon genişlikleri: site / şartlar / durum */
+    /* Kolon genişlikleri: site / şartlar / durum (masaüstü için) */
     th:first-child,
     td:first-child {
       width: 10%;
@@ -186,6 +185,38 @@
       margin-top: 28px;
       font-size: 11px;
       color: #666;
+    }
+
+    /* --- MOBİL DÜZENİ: TABLO EKRANA TAM OTURSUN --- */
+    @media (max-width: 768px) {
+      .container {
+        max-width: 100%;
+        padding: 20px 8px 32px;
+      }
+
+      /* Kolon genişliklerini serbest bırak, tabloyu tam ekrana oturt */
+      th:first-child,
+      td:first-child,
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3) {
+        width: auto !important;
+      }
+
+      table {
+        width: 100%;
+        min-width: 100%;
+      }
+
+      td {
+        white-space: normal;
+        word-wrap: break-word;
+      }
+
+      .table-wrapper {
+        padding: 8px 0;
+      }
     }
   </style>
 </head>
