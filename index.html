@@ -233,7 +233,7 @@
       bota gidin ve site adını yazın. Bot size sitenin güncel giriş adresini verecektir.
     </p>
 
-    <a class="download-link" href="assets/Güncel Deneme Bonusu Listesi.xlsx" download>
+    <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
       Listeyi Excel Olarak İndir
     </a>
 
@@ -258,7 +258,7 @@
   <script>
     async function loadCSV() {
       try {
-        const res = await fetch('assets/bonuslar.csv');
+        const res = await fetch('assets/guncel_deneme_bonuslari_listesi.csv');
         const text = await res.text();
 
         const lines = text.trim().split(/\r?\n/);
