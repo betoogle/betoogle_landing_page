@@ -215,7 +215,7 @@
   <script>
     async function loadCSV() {
       try {
-        const res = await fetch('bonuslar.csv');
+        const res = await fetch('assets/bonuslar.csv');
         const text = await res.text();
 
         const lines = text.trim().split(/\r?\n/);
