@@ -34,14 +34,18 @@
       padding: 24px 12px 40px;
     }
 
-    .logo {
-      font-size: 56px;
-      font-weight: 800;
-      margin-top: 16px;
+    .brand-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo-img {
+      width: 64px; /* büyük gelirse 56 veya 48 yapabilirsin */
+      height: auto;
       margin-bottom: 4px;
-      background: linear-gradient(135deg, #3df, #3f3, #fc3, #f33);
-      -webkit-background-clip: text;
-      color: transparent;
     }
 
     h1 {
@@ -54,26 +58,6 @@
       color: #bbb;
       margin-bottom: 18px;
       line-height: 1.5;
-    }
-
-    .info-line {
-      font-size: 12px;
-      color: #888;
-      margin-bottom: 12px;
-    }
-
-    .link-old {
-      font-size: 13px;
-      margin-bottom: 20px;
-    }
-
-    .link-old a {
-      color: #3ddc84;
-      text-decoration: none;
-    }
-
-    .link-old a:hover {
-      text-decoration: underline;
     }
 
     .table-wrapper {
@@ -108,6 +92,23 @@
 
     tr:nth-child(even) td {
       background: #101010;
+    }
+
+    /* Kolon genişlikleri: site / şartlar / durum */
+    th:first-child,
+    td:first-child {
+      width: 22%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 58%;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 20%;
+      text-align: center;
     }
 
     .badge {
@@ -146,6 +147,29 @@
       filter: brightness(1.07);
     }
 
+    .filter-bar {
+      margin: 12px 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #181818;
+      color: #ddd;
+    }
+
+    .filter-btn.active {
+      background: #14a44d;
+      color: #fff;
+    }
+
     footer {
       margin-top: 28px;
       font-size: 11px;
@@ -156,32 +180,32 @@
 <body>
   <div class="container">
     <a href="https://t.me/Betoogle_Bot" class="brand-link" target="_blank" rel="noopener">
-      <img src="assets/betoog­le-logo.png" alt="Betoogle" class="logo-img">
+      <img src="assets/logo.png" alt="Betoogle" class="logo-img">
       <h1>Betoog­le</h1>
     </a>
+
     <p class="subtitle">
-      Aşağıda, güncel <strong>deneme bonusu</strong> listesi yer alır.<br />
-      Liste; telefon, tablet ve bilgisayardan direkt görüntülenebilir.
+      Listede bulunan sitelerin güncel girişlerine ulaşmak için
+      <a href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">buraya tıklayarak</a>
+      bota gidin ve site adını yazın. Bot size sitenin güncel giriş adresini verecektir.
     </p>
 
-    <p class="info-line">
-      ❗ Betoog­le, sadece link ve kampanya bilgisi gösterir. <strong>Bahis/para işlemi yapmaz.</strong>
-    </p>
+    <a class="download-link" href="assets/Güncel Deneme Bonusu Listesi.xlsx" download>
+      Listeyi Excel Olarak İndir
+    </a>
 
-    <p class="link-old">
-      Eski landing sayfasını görmek istersen:
-      <a href="landing.html" target="_blank" rel="noopener">botu tanıtan sayfayı aç</a>
-    </p>
+    <div class="filter-bar">
+      <button type="button" class="filter-btn active" data-filter="all">Tümü</button>
+      <button type="button" class="filter-btn" data-filter="yatirimli">Yatırımlı</button>
+      <button type="button" class="filter-btn" data-filter="yatirimsiz">Yatırımsız</button>
+      <button type="button" class="filter-btn" data-filter="bos">Durum Yok</button>
+    </div>
 
     <div class="table-wrapper">
       <table id="bonus-table">
         <!-- JS buraya tabloyu basacak -->
       </table>
     </div>
-
-    <a class="download-link" href="bonuslar.csv" download>
-      Listeyi Excel (CSV) Olarak İndir
-    </a>
 
     <footer>
       © 2025 Betoog­le — Bu bir link doğrulama aracıdır.
@@ -204,6 +228,7 @@
         const rows = lines.map(line => line.split(delimiter));
 
         const header = rows[0];
+        const durumIndex = header.findIndex(h => h.toLowerCase().includes('durum'));
         const dataRows = rows.slice(1).filter(r => r.join('').trim() !== '');
 
         const table = document.getElementById('bonus-table');
@@ -252,10 +277,50 @@
             tr.appendChild(td);
           });
 
+          // satırın durum bilgisini data-* attribute olarak ekle
+          if (durumIndex !== -1) {
+            const rawDurum = (cols[durumIndex] || '').trim().toLowerCase();
+            let key = 'bos';
+            if (rawDurum.includes('yatırımsız') || rawDurum.includes('yatirimsiz')) {
+              key = 'yatirimsiz';
+            } else if (rawDurum.includes('yatırımlı') || rawDurum.includes('yatirimli')) {
+              key = 'yatirimli';
+            }
+            tr.dataset.durum = key;
+          }
+
           tbody.appendChild(tr);
         });
 
         table.appendChild(tbody);
+
+        // Filtre fonksiyonu
+        function applyFilter(filter) {
+          const rows = document.querySelectorAll('#bonus-table tbody tr');
+          rows.forEach(row => {
+            const value = row.dataset.durum || 'bos';
+            if (filter === 'all' || filter === value) {
+              row.style.display = '';
+            } else {
+              row.style.display = 'none';
+            }
+          });
+        }
+
+        // Buton click eventleri
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filter = btn.dataset.filter;
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            applyFilter(filter);
+          });
+        });
+
+        // Varsayılan filtre
+        applyFilter('all');
+
       } catch (e) {
         console.error(e);
         document.querySelector('.table-wrapper').innerHTML =
