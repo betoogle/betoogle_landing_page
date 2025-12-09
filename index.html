@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Betoog­le — Güncel Deneme Bonusları Listesi</title>
-  <meta name="description" content="Betoog­le, sitelerin değişen adreslerini anında bulmanızı sağlar." />
+  <meta name="description" content="Betoog­le, sitelerin değişen adreslerini anında bulmanızı sağlar. Sahte linkleri filtreler. Para işlemi yoktur." />
 
   <!-- Google Analytics -->
-  <!-- BURADAKİ G-XXXXXXX YERLERİNİ KENDİ GA ID'N İLE DEĞİŞTİR -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRZKLB3ZGW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -69,4 +68,126 @@
     }
 
     .link-old a {
-      color: #3ddc
+      color: #3ddc84;
+      text-decoration: none;
+    }
+
+    .link-old a:hover {
+      text-decoration: underline;
+    }
+
+    .table-wrapper {
+      margin-top: 8px;
+      border-radius: 12px;
+      background: #111;
+      padding: 10px;
+      box-shadow: 0 0 0 1px #222;
+      overflow-x: auto; /* telefonda yatay kaydırma */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 650px;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 9px 10px;
+      border-bottom: 1px solid #222;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #181818;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tr:nth-child(even) td {
+      background: #101010;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      text-transform: lowercase;
+    }
+
+    .badge.yatirimli {
+      background: rgba(255, 193, 7, 0.12);
+      color: #ffc107;
+      border: 1px solid rgba(255, 193, 7, 0.3);
+    }
+
+    .badge.yatirimsiz {
+      background: rgba(40, 167, 69, 0.12);
+      color: #28a745;
+      border: 1px solid rgba(40, 167, 69, 0.3);
+    }
+
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: #14a44d;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .download-link:hover {
+      filter: brightness(1.07);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 11px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">B</div>
+    <h1>Betoog­le</h1>
+    <p class="subtitle">
+      Aşağıda, güncel <strong>deneme bonusu</strong> listesi yer alır.<br />
+      Liste; telefon, tablet ve bilgisayardan direkt görüntülenebilir.
+    </p>
+
+    <p class="info-line">
+      ❗ Betoog­le, sadece link ve kampanya bilgisi gösterir. <strong>Bahis/para işlemi yapmaz.</strong>
+    </p>
+
+    <p class="link-old">
+      Eski landing sayfasını görmek istersen:
+      <a href="landing.html" target="_blank" rel="noopener">botu tanıtan sayfayı aç</a>
+    </p>
+
+    <div class="table-wrapper">
+      <table id="bonus-table">
+        <!-- JS buraya tabloyu basacak -->
+      </table>
+    </div>
+
+    <a class="download-link" href="Güncel Deneme Bonusu Listesi.csv" download>
+      Listeyi Excel (CSV) Olarak İndir
+    </a>
+
+    <footer>
+      © 2025 Betoog­le — Bu bir link doğrulama aracıdır.
+    </footer>
+  </div>
+
+  <script>
+    async function loadCSV() {
+      try {
+        const res = await fetch('Güncel Deneme Bonusu Listesi.csv');
+        const text = await
