@@ -1,4 +1,4 @@
-﻿site_name;şartlar;durum
+﻿Site Adı;Şartlar;Durum
 1king;maks 750tl çekim;yatırımsız
 acrobet;250tl yatırımlı. Maks 5k çekim;yatırımlı
 akcebet;250tl yatırımlı. Maks 500 çekim;yatırımlı
@@ -19,7 +19,7 @@ bahibom;Maks 1k çekim;yatırımsız
 bahis1000;Maks 500tl çekim;yatırımsız
 bahisabi;200tl yatırımlı. Maks 2k çekim;yatırımlı
 bahisal;Maks 500tl çekim;yatırımsız
-bahisbudur;şartlar canlı destekte;
+bahisbudur;250tl yatırımlı. Maks 1k çekim;yatırımlı
 bahiscasino;Maks 1k çekim;yatırımsız
 bahiscom;Maks 3k çekim;yatırımsız
 bahisdeyiz;Maks 500tl çekim;yatırımsız
@@ -47,11 +47,10 @@ betbetin;1k yatırımlı. Maks 2k çekim;yatırımlı
 betbigo;Maks 1k çekim;yatırımsız
 betbom;Yatırım kadar deneme min-maks 10 katı çekim;yatırımlı
 betbox;Maks 1k çekim;yatırımsız
-betbulls;şartlar canlı destekte;
 betchaplin;250tl yatırım maks 1k çekim;yatırımlı
 betci;Maks 1k çekim;yatırımsız
-betcup;şartlar canlı destekte;
-betebet;şartlar canlı destekte;
+betcup;500 yatırımlı. Maks 2.5k çekim;yatırımlı
+betebet;Maks 2.5k çekim;yatırımsız
 betesbet;Maks 500tl çekim;yatırımsız
 betewin;Maks 500tl çekim;yatırımsız
 betexper;Maks 250tl çekim;yatırımsız
@@ -60,10 +59,11 @@ betgar;100tl yatırımlı. Maks 1k çekim;yatırımlı
 betgaranti;Maks 500tl çekim;yatırımsız
 betgit;100tl yatırımlı. Maks 500tl çekim;yatırımlı
 betgross;500tl yatırımlı. Maks 700tl çekim;yatırımlı
-bethand;şartlar canlı destekte;
+bethand;Telegram bonusu. Maks 1k çekim;yatırımsız
 betibenz;yatırımsız maks 300tl çekim;yatırımsız
 betigma;250tl yatırımlı. Maks 500tl çekim;yatırımlı
 betiton;1k yatırımlı. Maks 5k çekim;yatırımlı
+betjolly;%10 kadar maks çekim sınırsız.;yatırımsız
 betkanyon;Maks 500tl çekim;yatırımsız
 betkare;Maks 1k çekim;yatırımsız
 betkolik;1k yatırımlı. Maks 2.5k çekim;yatırımlı
@@ -75,7 +75,7 @@ betlivo;Maks 1k çekim;yatırımsız
 betmabet;Maks 500tl çekim;yatırımsız
 betmarino;Maks 1k çekim;yatırımsız
 betmatik;100tl yatırımlı. Maks 500tl çekim;yatırımlı
-betmoon;şartlar canlı destekte;
+betmoon;Maks 200tl çekim;yatırımsız
 betnef;Maks 1k çekim;yatırımsız
 betnis;Maks 500tl çekim;yatırımsız
 betnixe;maks 500tl çekim;yatırımsız
@@ -88,8 +88,8 @@ betosfer;100tl yatırımlı. Maks 250tl çekim;yatırımlı
 betovis;500tl yatırımlı. Maks 1.5k çekim;yatırımlı
 betparibu;200tl yatırımlı. Maks 500tl çekim;yatırımlı
 betpark;Maks 500tl çekim;yatırımsız
-betpas;şartlar canlı destekte;
-betper;şartlar canlı destekte;
+betpas;Bonus kazancı kadar yatırım. Maks 1k çekim;yatırımlı
+betper;Maks 1k çekim;yatırımsız
 betpipo;Min 500tl maks 10k çekim;yatırımsız
 betpir;300tl yatırımlı. Sınırsız çekim.;yatırımlı
 betpuan;Maks 500tl çekim;yatırımsız
@@ -109,7 +109,8 @@ betticket;Maks 500tl çekim;yatırımsız
 betturka;Maks 250tl çekim;yatırımsız
 betturkey;Maks 1k çekim;yatırımsız
 betvast;Maks 250tl çekim;yatırımsız
-betvole;şartlar canlı destekte;
+betvino;Maks 1k çekim;yatırımsız
+betvole;Maks 2.5k çekim;yatırımsız
 betvoy;500tl yatırımlı. Maks 1k çekim;yatırımlı
 betwild;Maks 1k çekim;yatırımsız
 betwoon;Maks 500tl çekim;yatırımsız
@@ -131,7 +132,6 @@ casinoburada;Maks 500tl çekim;yatırımsız
 casinofast;Maks 500tl çekim;yatırımsız
 casinomega;250tl yatırımlı. Maks 500tl çekim;yatırımlı
 casinomilyon;500 tl yatırımlı. Maks 1k çekim. Anapara il devam;yatırımlı
-casinopark;maks 250tl çekim;yatırımsız
 casinovoya;1k yatırımlı. Maks 2k çekim;yatırımlı
 casinowon;Maks 500tl çekim;yatırımsız
 casinra;500tl yatırımlı. Maks 1k çekim;yatırımlı
@@ -149,10 +149,10 @@ dengebet;Maks 200tl çekim;yatırımsız
 deobet;Maks 250tl çekim;yatırımsız
 dinamobet;Maks 500tl çekim;yatırımsız
 dodobet;Maks 500tl çekim;yatırımsız
-editörbet;500tl yatırımlı. Maks yatırımın 10katı çekim;yatırımlı
+editorbet;500tl yatırımlı. Maks yatırımın 10katı çekim;yatırımlı
 efesbetcasino;Maks 1k çekim;yatırımsız
 efsino;300tl yatırım. Maks 600tl çekim;yatırımlı
-elexbet;maks 1k çekim;yatırımsız
+elexbet;Maks 1k çekim;yatırımsız
 enbet;Maks 500tl çekim;yatırımsız
 enjoybet;Maks 250tl çekim;yatırımsız
 enobahis;Min 1k maks sınırsız. Bonus kazancı kadar yatırım.;yatırımlı
@@ -163,9 +163,9 @@ extrabet;Maks 1k çekim;yatırımsız
 eyfelcasino;150tl yatırımlı. Maks 300 çekim;yatırımlı
 favoribahis;%10 kadar maks çekim sınırsız.;yatırımsız
 favorisen;Maks 500tl çekim;yatırımsız
-favorislot;bonus bakiyesinin %10 kadar sınırsız çekim;yatırımsız
-fenomenbet;tg bonusu maks 500tl çekim;yatırımsız
-festwin;maks 300tl çekim;yatırımsız
+favorislot;%10 kadar sınırsız çekim;yatırımsız
+fenomenbet;250tl yatırımlı. Maks 500tl çekim;yatırımsız
+festwin;Maks 300tl çekim;yatırımsız
 fifabahis;Maks 500tl çekim;yatırımsız
 fikstürbet;Maks 500tl çekim;yatırımsız
 fitcas;250tl yatırımlı. Maks 500tl çekim;yatırımlı
@@ -182,24 +182,25 @@ goatbahis;200tl yatırımlı. Maks 400tl çekim;yatırımlı
 gobahis;250tl yatırımlı. Maks 500tl çekim;yatırımlı
 gobeti;250tl yatırımlı. Maks 500tl çekim. Anapara ile devam;yatırımlı
 golbet;Maks 1k çekim;yatırımsız
+goldenbahis;1k yatırılımlı. Maks 5k çekim;yatırımlı
 golegol;Maks 1k çekim;yatırımsız
-gorabet;şartlar canlı destekte;
+gorabet;500tl yatırımlı. Maks 2.5k çekim;yatırımlı
 grandoperabet;250tl yatırılım. Maks 500tl çekim;yatırımlı
 grandpashabet;Maks 1k çekim;yatırımsız
 grbets;100 yatırımlı. Maks 250tl çekim. Anapara ile devam;yatırımlı
 hanedanbet;Maks 300tl çekim;yatırımsız
+harbibahis;1k yatırımlı. Maks 1.5k çekim;yatırımlı
 havanabet;maks 250tl çekim;yatırımsız
 hayalbahis;250tl yatırımlı. Maks 1000tl çekim;yatırımlı
 hepyek;Maks 1k çekim;yatırımsız
-heybet;maks 500tl çekim;yatırımsız
-hizlibahis;100tl yatırım. Maks 300tl çekim;yatırımlı
+heybet;Maks 1k çekim;yatırımsız
 hilarionbet;Maks 500tl çekim;yatırımsız
 hilbet;Telegram Bonusu. 500tl yatırımlı. 500tl çek. Anapara ile devam;yatırımlı
 hiltonbet;Maks 1k çekim;yatırımsız
-hipbet;200tl yatırım maks 1k çekim;yatırımlı
+hipbet;Maks 1k çekim;yatırımsız
 hitbet;200tl bonus kazancı ile sınırsız çekim;yatırımsız
 hititbet;Telegram bonusu fs kazancının maks 25katı çekim;yatırımsız
-hobitbet;250tl yatırımlı maks 500tl çekim;yatırımlı
+hizlibahis;100tl yatırım. Maks 300tl çekim;yatırımlı
 hojabet;Maks 500tl çekim;yatırımsız
 holeybet;1k yatırımlı. Maks 2k çekim;yatırımlı
 hugobet;2.5k yatırımlı. Maks 5k çekim;yatırımlı
@@ -209,14 +210,13 @@ ibizabet;Maks 1k çekim;yatırımsız
 icebahis;Min 1k maks 5k çekim;yatırımsız
 ikasbet;Maks 500tl çekim;yatırımsız
 ikimisli;Maks 1k çekim;yatırımsız
-imajbet;şartlar canlı destekte;
-interbahis;şartlar canlı destekte;
+imajbet;Maks 1k çekim;yatırımsız
+interbahis;500tl yatırımlı. Maks 2.5k çekim;yatırımlı
 ironbet;100tl yatırım. Maks 300tl çekim;yatırımlı
 ispor;Maks 150tl çekim;yatırımsız
 istinyecasino;Maks 500tl çekim;yatırımsız
 jackbom;250tl yatırımlı. Maks 500tl çekim;yatırımlı
 janticasino;100tl yatırımlı. Maks 500tl çekim;yatırımlı
-jasminbet;şartlar canlı destekte;
 jojova;Maks 1k çekim;yatırımsız
 joybet;Maks 250tl çekim;yatırımsız
 jugoobet;Maks 500tl çekim;yatırımsız
@@ -230,194 +230,183 @@ kingbetting;100tl yatırım. Maks 500tl çekim;yatırımlı
 kingroyal;Maks 1k çekim;yatırımsız
 kktcbet;Maks 1k çekim;yatırımsız
 kolaybet;Maks 100tl çekim;yatırımsız
-konseycasino;maks 1k çekim;yatırımlı
-kralbet;maks 400tl çekim;yatırımsız
-kulisbet;maks 200tl çekim;yatırımsız
-kuponbet;maks 5k çekim;yatırımsız
-kuzeycasino;şartlar canlı destekte;
-lagoncasino;500tl yatırım maks 1k çekim;yatırımlı
-lambobahis;100tl yatırım maks 300tl çekim;yatırımlı
-levabet;şartlar canlı destekte;
-ligobet;200tl yatırım maks 500tl çekim;yatırımlı
-limanbet;100tl yatırım 1100tl çekim;yatırımlı
-livebahis;100tl yatırım maks 500tl çekim;yatırımlı
-lordbahis;maks 100tl çekim;yatırımsız
-lordcasino;maks 400tl çekim;yatırımsız
-lotobet;100tl yatırım maks 350tl çekim;yatırımlı
-loyalbahis;maks 1k çekim;yatırımsız
-luluslot;100tl yatırım maks 250tl çekim;yatırımlı
-luxbet;500tl yatırım maks 500tl çekim;yatırımlı
-lükscasino;maks 500tl çekim;yatırımsız
-madridbet;maks 500tl çekim;yatırımsız
+konseycasino;Maks 1k çekim;yatırımsız
+kralbet;Maks 500tl çekim;yatırımsız
+kulisbet;Maks 500tl çekim;yatırımsız
+kuponbet;500tl yatırımlı. 1k çekim.;yatırımlı
+kuzeycasino;500tl yatırımlı. Maks 1.5k çekim;yatırımlı
+levabet;500tl yatırımlı. Maks 1k çekim;yatırımlı
+lidyabet;2k yatırımlı. Maks 2.5k çekim;yatırımlı
+ligobet;200tl yatırım. Maks 500tl çekim;yatırımlı
+limanbet;250tl yatırımlı. Maks 1250tl çekim;yatırımlı
+lordbahis;Maks 100tl çekim;yatırımsız
+lordcasino;Maks 400tl çekim;yatırımsız
+lukscasino;Maks 500tl çekim;yatırımsız
+luluslot;100tl yatırım. Maks 250tl çekim;yatırımlı
+luxbet;1k yatırımlı. Maks 1.5k çekim;yatırımlı
+mackolikbet;Maks 1k çekim;yatırımsız
+madambet;Maks 2.5k çekim;yatırımsız
+madridbet;Maks 1k çekim;yatırımsız
+madridking;Maks 300tl çekim;yatırımsız
+majorx;1k yatırımlı. Maks 5k çekim;yatırımlı
+makrobet;Maks 2k çekim;yatırımsız
 maksibet;%10 kadar maks çekim sınırsız.;yatırımsız
-maltcasino;maks 500tl çekim;yatırımsız
-mariobet;maks 500tl çekim;yatırımsız
-maritbet;100tl yatırım maks 400tl çekim;yatırımlı
+maltcasino;Maks 1k çekim;yatırımsız
+mariobet;Maks 500tl çekim;yatırımsız
+maritbet;100tl yatırım. Maks 400tl çekim;yatırımlı
 markaj;1k yatırım 2k çekim;yatırımlı
-marsbahis;şartlar canlı destekte;
-masalbahis;şartlar canlı destekte;yatırımsız
-maskebet;250tl yatırım maks 500tl çekim;yatırımlı
-masterbetting;maks 750tl çekim;yatırımsız
-matadorbet;maks 750tl çekim;yatırımsız
-maximcasino;maks 500tl çekim;yatırımsız
-maxroyalcasino;maks 200tl çekim;yatırımsız
-maxwin;maks 1k çekim;yatırımsız
-medusabahis;maks 100tl çekim;yatırımsız
-mekanbahis;maks 150tl çekim;yatırımsız
+marsbahis;Telegram bonusu. Maks 5k çekim;yatırımsız
+maskebet;250tl yatırım. Maks 500tl çekim;yatırımlı
+masterbetting;Maks 2k çekim;yatırımsız
+matadorbet;Maks 1k çekim;yatırımsız
+maximcasino;Maks 500tl çekim;yatırımsız
+maxwin;Maks 1k çekim;yatırımsız
+medusabahis;Maks 100tl çekim;yatırımsız
+mekanbahis;Maks 1k çekim;yatırımsız
 mercurecasino;%10 kadar maks çekim sınırsız.;yatırımsız
-meritbet;%10 kadar maks çekim sınırsız.;yatırımsız
-meritcasino;maks 5k çekim;yatırımsız
-meritking;maks 500tl çekim;yatırımsız
-meritlimancasino;maks 500tl çekim;yatırımsız
+meritbet;Maks 1k çekim;yatırımsız
+meritcasino;Maks 5k çekim;yatırımsız
+meritking;Maks 1k çekim;yatırımsız
+meritlimancasino;Maks 1k çekim;yatırımsız
 meritqueen;250tl yatırım maks 500tl çekim;yatırımlı
-meritroyalcasino;maks 1k çekim;yatırımsız
-mersobahis;maks 1k çekim;yatırımsız
-metrobahis;750tl yatırım maks 1500tl çekim;yatırımlı
-meybet;maks 500tl çekim;yatırımsız
-milanobet;şartlar canlı destekte;
-milosbet;maks 500tl çekim;yatırımsız
-milyonluk;maks 250tl çekim;yatırımsız
-mistycasino;maks 500tl çekim;yatırımsız
-modelbahis;şartlar canlı destekte;
-mokkabet;şartlar canlı destekte;
-moldebet;150tl yatırım maks 500tl çekim;yatırımlı
-mrgamb;maks 750tl çekim;yatırımsız
-napolibet;maks 1k çekim;yatırımsız
-nesilbet;maks 250tl çekim;yatırımsız
-netbahis;100tl yatırım maks 500tl çekim;yatırımlı
-nisanbet;100tl yatırım maks 500tl çekim;yatırımlı
-nisbet;maks 250tl çekim;yatırımsız
-noktabet;maks 500tl çekim;yatırımsız
-odden;100tl yatırım maks 250tl çekim. Anapara ile devam;yatırımlı
-olabahis;maks 1k çekim;yatırımsız
-olaycasino;maks 500tl çekim;yatırımsız
-oldcasino;maks 250tl çekim;yatırımsız
-olipsbet;sosyalmedya bonusu 100tl yatırım maks 500tl çekim. Anapara ile devam;yatırımlı
-oneobet;maks 500tl çekim;yatırımsız
-onwin;maks 600tl çekim;yatırımsız
+meritslot;Maks 100tl çekim;yatırımsız
+merkezbahis;250tl yatırım. Maks 500tl çekim;yatırımlı
+mersobahis;Maks 1k çekim;yatırımsız
+meybet;Maks 500tl çekim;yatırımsız
+milanobet;300tl yatırımlı. Maks 1.5k çekim;yatırımlı
+milosbet;Maks 500tl çekim;yatırımsız
+misliwin;100tl yatırımlı. Maks 300tl çekim;yatırımlı
+mistycasino;Maks 500tl çekim;yatırımsız
+mobilcasino;1k yatırımlı. Min-Maks 7.5k çekim;yatırımlı
+modabet;Maks 1k çekim;yatırımsız
+modelbahis;1k yatırımlı. 1k çekim. Anapara ile devam;yatırımlı
+mrgamb;Min 250tl yatırım. Yatırım kadar çekim sınırsız;yatırımlı
+napolibet;Maks 2k çekim;yatırımsız
+navacasino;100tl yatırımlı. Maks 250tl çekim;yatırımlı
+nerobet;1k yatırımlı. Maks 5k çekim;yatırımlı
+nesilbet;Maks 250tl çekim;yatırımsız
+netbahis;100tl yatırım. Maks 500tl çekim;yatırımlı
+ngsbahis;1k yatırımlı. Maks 5k çekim;yatırımlı
+nisanbet;100tl yatırım. Maks 500tl çekim;yatırımlı
+nisbet;Maks 500tl çekim;yatırımsız
+odden;100tl yatırım. Maks 250tl çekim. Anapara ile devam;yatırımlı
+olabahis;Maks 1k çekim;yatırımsız
+olaycasino;100tl yatırım. Maks 500tl çekim;yatırımlı
+oldcasino;Maks 1k çekim;yatırımsız
+oneobet;Maks 500tl çekim;yatırımsız
+onwin;Maks 1k çekim;yatırımsız
 oslobet;%10 kadar maks çekim sınırsız.;yatırımsız
-ossebet;maks 500tl çekim;yatırımsız
-otobet;maks 800tl çekim;yatırımsız
-palacebet;100tl yatırım maks 750tl çekim;yatırımlı
-palazzobet;maks 1k çekim;yatırımsız
+otobet;Maks 800tl çekim;yatırımsız
+palacebet;200tl yatırımlı. Maks 850tl çekim;yatırımlı
+palazzobet;Maks 500tl çekim;yatırımsız
 palermocasino;maks 300tl çekim;yatırımsız
-parmabet;maks 500tl çekim;yatırımsız
-parolambet;tg bonusu maks 500tl çekim;yatırımsız
-pashagaming;maks 1500tl çekim;yatırımsız
-paşacasino;%10 kadar maks çekim sınırsız.;yatırımsız
-piabellacasino;maks 5k çekim;yatırımsız
-piacasinobet;maks 200tl çekim;yatırımsız
-pinbahis;200tl yatırım maks 1200tl çekim;yatırımlı
-pisabet;250tl yatırım maks 250tl çekim. Anapara ile devam;yatırımlı
-playico;maks 3500tl çekim;yatırımsız
-playmen;maks 250tl çekim;yatırımsız
-polobet;maks 2500tl çekim;yatırımsız
-portbet;maks 500tl çekim;yatırımsız
-portobet;500tl yatırım maks 2k çekim;yatırımlı
-pradabet;maks 2500tl çekim;yatırımsız
-prensbet;maks 1k çekim;yatırımsız
-primebahis;200tl yatırım maks 1k çekim;yatırımlı
-privebet;maks 500tl çekim;yatırımsız
-pulibet;şartlar canlı destekte;
-radissonbet;maks 500tl çekim;yatırımsız
-rbet;%10 kadar maks çekim sınırsız.;yatırımsız
-realbahis;maks 500tl çekim;yatırımsız
-redwin;şartlar canlı destekte;
-rekorbet;maks 1k çekim;yatırımsız
-restbet;şartlar canlı destekte;
-retrobet;100tl yatırım maks 1500tl çekim;yatırımlı
-reynabet;250tl yatırım maks 500 çekim;yatırımlı
-rinabet;maks 1k çekim;yatırımsız
-risebet;maks 500tl çekim;yatırımsız
-roketbahis;maks 500tl çekim;yatırımsız
-roketbet;100tl yatırım maks 500tl çekim;yatırımlı
-romabet;250tl yatırım maks 1250tl çekim;yatırımlı
-ronabet;1k yatırım 1k çekim. Anapara ile devam;yatırımlı
-routebet;maks 200tl çekim;yatırımsız
-royalbet;maks 1500tl çekim;yatırımsız
-safirbet;maks 500tl çekim;yatırımsız
-sahabet;maks 500tl çekim;yatırımsız
-sahibet;maks 250tl çekim;yatırımsız
-salamisbahis;100tl yatırım maks 500tl çekim;yatırımlı
-saltbahis;maks 250tl çekim;yatırımsız
-sapphirepalace;250tl yatırım maks 500 çekim;yatırımlı
-savoycasino;maks 5k çekim;yatırımsız
-sezonbahis;maks 250tl çekim;yatırımsız
-sheratonbet;250tl yatırım maks 500 çekim;yatırımlı
-slotbaba;maks 1k çekim;yatırımsız
-slotday;100tl yatırım maks 500tl çekim;yatırımlı
-slotdünyası;min para yatırma maks 500tl çekim;yatırımlı
-slotella;1k yatır maks 2k çekim;yatırımlı
-slotin;200tl yatırım maks 700tl çekim;yatırımlı
-smartbahis;çekim kadar yatırım. Maks 2500tl çekim. Anapara ile devam;yatırımlı
-sohobet;maks 500tl çekim;yatırımsız
-solobet;maks 660tl çekim;yatırımsız
-sonbahis;tg bonusu maks 200tl çekim;yatırımsız
-sosabet;100tl yatırım maks 500tl çekim;yatırımlı
-spinco;100tl yatırım maks 1k çekim;yatırımlı
-spinvbet;maks 1500tl çekim;yatırımsız
-starora;maks 500tl çekim;yatırımsız
-starzbet;maks 750tl çekim;yatırımsız
-stilbet;500tl yatırım maks 500tl çekim. Anapara ile devam;yatırımlı
-stonebahis;100tl yatırım maks 300tl çekim;yatırımlı
-superbet;maks 1k çekim;yatırımsız
-superbetin;maks 500tl çekim;yatırımsız
-supertotobet;maks 500tl çekim;yatırımsız
-süratbet;maks 250tl çekim;yatırımsız
-tambet;maks 500tl çekim;yatırımsız
-telebet;500tl yatır maks 1k çekim;yatırımlı
-tenusbet;şartlar canlı destekte;
-teslabahis;şartlar canlı destekte;
-thecasino;250 yatırım maks 555tl çekim;yatırımlı
-tikobet;maks 1k çekim;yatırımsız
-timebet;250tl yatırım maks 3k çekim;yatırımlı
-tiosbet;şartlar canlı destekte;
-tipobet;maks 500tl çekim;yatırımsız
-titabet;250tl yatır maks 500 çekim;yatırımlı
-titobet;100tl yatırım maks 400tl çekim;yatırımlı
-tlcasino;maks 1k çekim;yatırımsız
-tokyobet;şartlar canlı destekte;
-tombet;1k yatırım 500tl çek. Anapara ile devam;yatırımlı
-tophillbet;100tl yatırım maks 5k çekim;yatırımlı
-trabzonbey;maks 300tl çekim;yatırımsız
-trbet;250tl yatırım maks 1k çekim;yatırımlı
-truvabet;şartlar canlı destekte;
-trwin;maks 250tl çekim;yatırımsız
-tuccobet;100tl yatırım maks 300tl çekim;yatırımlı
-tulipbet;şartlar canlı destekte;
-turbobahis;250tl yatırım maks 500tl çekim;yatırımlı
-türkbet;maks 500tl çekim;yatırımsız
-ultrabet;1k yatırım maks 2k çekim;yatırımlı
-ultraslot;maks 10USD çekim;yatırımsız
-vadicasino;maks 250tl çekim;yatırımsız
-vaycasino;1k yatırım maks 2k çekim;yatırımlı
-vegabet;200tl yatırım maks 1k çekim;yatırımlı
-venombet;maks 2k çekim;yatırımsız
-venüsbet;şartlar canlı destekte;
-verabet;şartlar canlı destekte;
-vevobahis;şartlar canlı destekte;
-vidobet;200tl yatırım maks 700tl çekim;yatırımlı
-vippark;maks 5k çekim;yatırımsız
-virabet;100tl yatırım maks 500tl çekim;yatırımlı
-vitrinbet;maks 400tl çekim;yatırımsız
-vizebet;min 500 maks 1k yatırıma maks 500tl çekim;yatırımlı
-vizyonbet;maks 250tl çekim;yatırımsız
-vocobet;maks 500tl çekim;yatırımsız
-voinbet;200tl yatırım maks 500tl çekim;yatırımlı
-wbahis;maks 500tl çekim;yatırımsız
-winbir;şartlar canlı destekte;
-winxbet;maks 500tl çekim;yatırımsız
-wojobet;100tl yatırım maks 200tl çekim;yatırımlı
-wolbet;500tl yatırımlı maks 2.5k çekim;yatırımlı
-xbahis;maks 3k çekim;yatırımsız
-xslot;maks 1k çekim;yatırımsız
-yakabet;maks 250tl çekim;yatırımsız
-yazıtura;maks 500tl çekim;yatırımsız
-yedibahis;maks 1k çekim;yatırımsız
-zbahis;maks 1k çekim;yatırımsız
-zegnabet;100tl yatır maks çekim sınırı yok.;yatırımlı
-zenginsin;maks 15k çekim;yatırımsız
-zirvebet;maks 1k çekim;yatırımsız
-zlot;250tl yatırım maks 500 çekim;yatırımlı
-zumabet;maks 500tl çekim;yatırımsız
-zurihbet;maks 500tl çekim;yatırımsız
+parmabet;Maks 500tl çekim;yatırımsız
+parolambet;Telegram bonusu. Maks 500tl çekim;yatırımsız
+pasacasino;Maks 1k çekim;yatırımsız
+pashagaming;Maks 1500tl çekim;yatırımsız
+piabellacasino;Maks 5k çekim;yatırımsız
+piacasinobet;Maks 200tl çekim;yatırımsız
+pinbahis;200tl yatırımlı. Maks 1200tl çekim;yatırımlı
+pinco;Belge doğrulama bonusu. Sınırsız çekim;yatırımsız
+pisabet;Maks 200tl çekim;yatırımsız
+playico;Maks 3k çekim;yatırımsız
+polobet;Maks 2500tl çekim;yatırımsız
+portbet;Maks 1k çekim;yatırımsız
+portobet;1k yatırımlı. Maks 2k çekim;yatırımlı
+pradabet;Maks 2500tl çekim;yatırımsız
+prensbet;Maks 1.5k çekim;yatırımsız
+primebahis;1k yatırımlı. Maks 2k çekim;yatırımlı
+privebet;Maks 500tl çekim;yatırımsız
+prizmabet;maks 750tl çekim;yatırımsız
+pulibet;250tl yatırımlı. Maks 1k çekim;yatırımlı
+puntobahis;Maks 300tl çekim;yatırımsız
+radissonbet;Maks 500tl çekim;yatırımsız
+ramadabet;Maks 1.5k çekim;yatırımsız
+rbet;Maks 1k çekim;yatırımsız
+realbahis;Maks 1k çekim;yatırımsız
+redwin;100tl yatırımlı. Maks 1100tl çekim;yatırımlı
+rekorbet;Maks 1k çekim;yatırımsız
+restbet;100tl yatırımlı. Maks 500tl çekim;yatırımlı
+retrobet;100tl yatırım. Maks 1200tl çekim;yatırımlı
+reynabet;250tl yatırım. Maks 500 çekim;yatırımlı
+rinabet;Maks 1k çekim;yatırımsız
+risebet;Maks 500tl çekim;yatırımsız
+roketbahis;500tl yatırımlı. Maks 1.5k çekim;yatırımlı
+roketbet;100tl yatırım. Maks 500tl çekim;yatırımlı
+romabet;250tl yatırım. Maks 1250tl çekim;yatırımlı
+ronabet;Maks 500tl çekim;yatırımsız
+routebet;Maks 250tl çekim;yatırımsız
+royalbet;Maks 1500tl çekim;yatırımsız
+safirbet;Maks 1k çekim;yatırımsız
+sahabet;Maks 1k çekim;yatırımsız
+sahibet;Maks 250tl çekim;yatırımsız
+savoycasino;Maks 5k çekim;yatırımsız
+setrabet;1k yatırımlı. Maks 2.5k çekim;yatırımlı
+sezonbahis;maks 300tl çekim;yatırımsız
+siyahbet;100tl yatırımlı. Maks 300tl çekim;yatırımlı
+slotday;Maks 500tl çekim;yatırımsız
+slotdünyası;Min 1 adet yatırım. Maks 500tl çekim;yatırımlı
+slotella;1k yatırımlı. Maks 2k çekim;yatırımlı
+slotpin;250 yatırımlı. Maks 1k çekim;yatırımlı
+slotsaray;1k yatırımlı. Maks 2k çekim;yatırımlı
+smartbahis;1k yatırımlı. Maks 2.5k çekim;yatırımlı
+sohobet;Maks 500tl çekim;yatırımsız
+solobet;Maks 1k çekim;yatırımsız
+sonbahis;Telegram bonusu. Maks 250tl çekim;yatırımsız
+sosabet;100tl yatırım. Maks 500tl çekim;yatırımlı
+spinco;100tl yatırım. Maks 1k çekim;yatırımlı
+spinvbet;Maks 1500tl çekim;yatırımsız
+starora;Maks 500tl çekim;yatırımsız
+starzbet;Maks 750tl çekim;yatırımsız
+stonebahis;Maks 1k çekim;yatırımsız
+superbet;Maks 1k çekim;yatırımsız
+supertotobet;Maks 1k çekim;yatırımsız
+suratbet;Maks 1k çekim;yatırımsız
+tambet;Maks 1k çekim;yatırımsız
+tarabet;Maks 1k çekim;yatırımsız
+tarafbet;Maks 500tl çekim;yatırımsız
+teosbet;Maks 1k çekim;yatırımsız
+teslabahis;100tl yatırımlı. Maks 500tl çekim;yatırımlı
+tiklabet;Maks 1k çekim;yatırımsız
+tikobet;Maks 1k çekim;yatırımsız
+timebet;250tl yatırım. Maks 3k çekim;yatırımlı
+tiosbet;Maks 20k çekim;yatırımsız
+tipobet;Maks 500tl çekim;yatırımsız
+titabet;250tl yatırımlı. Maks 500 çekim;yatırımlı
+titobet;500tl yatırımlı. Maks 1.5k çekim;yatırımlı
+tlcasino;Maks 500tl çekim;yatırımsız
+tokyobet;500tl yatırımlı. Maks 1k çelim;yatırımlı
+totembet;100tl yatırımlı. Maks 250tl çekim;yatırımlı
+trinkbet;500tl yatırımlı. Maks 1k çekim;yatırımlı
+truvabet;Maks 500tl çekim;yatırımsız
+trwin;Maks 250tl çekim;yatırımsız
+tulipbet;Maks 1k çekim;yatırımsız
+turbobahis;250tl yatırım. Maks 500tl çekim;yatırımlı
+türkbet;Maks 500tl çekim;yatırımsız
+ultrabet;1k yatırım maks 5k çekim;yatırımlı
+ultraslot;Maks 150$ çekim;yatırımsız
+vegabet;200tl yatırım. Maks 1k çekim;yatırımlı
+venombet;Maks 2k çekim;yatırımsız
+venüsbet;Maks 500tl çekim;yatırımsız
+verabet;500tl yatırımlım. Maks 1k çekim;yatırımlı
+vevobahis;Maks 1k çekim;yatırımsız
+vippark;Maks 5k çekim;yatırımsız
+virabet;1k yatırımlı. Anapara çevrimi sonrası sınırsız;yatırımlı
+vitrinbet;Maks 400tl çekim;yatırımsız
+vizebet;Maks 1k çekim;yatırımsız
+vocobet;Maks 500tl çekim;yatırımsız
+wbahis;Maks 1k çekim;yatırımsız
+winbir;250tl yatırımlı. Maks 500tl çekim;yatırımlı
+wingamb;500tl yatırımlı. Maks 1k çekim;yatırımlı
+winxbet;Maks 500tl çekim;yatırımsız
+xbahis;Maks 3k çekim;yatırımsız
+xslot;Maks 1k çekim;yatırımsız
+yakabet;Maks 1k çekim;yatırımsız
+yedibahis;Maks 1k çekim;yatırımsız
+yoncabet;500tl yatırımlı. Maks 750tl çekim;yatırımlı
+zbahis;Maks 1k çekim;yatırımsız
+zegnabet;250tl yatırımlı. Maks sınırsız;yatırımlı
+zenbet;Maks 1k çekim;yatırımsız
+zenginsin;Maks 15k çekim;yatırımsız
+zirvebet;Maks 1k çekim;yatırımsız
+zumabet;Maks 500tl çekim;yatırımsız
