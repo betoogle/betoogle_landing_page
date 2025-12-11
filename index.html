@@ -249,7 +249,9 @@
     </a>
 
     <p class="subtitle">
-      Betoogle Bot Online Bahis/Casino sitelerinin güncel giriş adreslerini anında bulan bir programdır.      
+      Listede bulunan sitelerin güncel girişlerine ulaşmak için
+      <a href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">buraya tıklayarak</a>
+      bota gidin ve site adını yazın. Bot size sitenin güncel giriş adresini verecektir.
     </p>
 
     <!-- Buton grubu -->
@@ -267,7 +269,7 @@
       <button type="button" class="filter-btn active" data-filter="all">Tümü</button>
       <button type="button" class="filter-btn" data-filter="yatirimli">Yatırımlı</button>
       <button type="button" class="filter-btn" data-filter="yatirimsiz">Yatırımsız</button>
-      <!-- Durum Yok butonu kaldırıldı -->
+      <button type="button" class="filter-btn" data-filter="yeni">Yeni Siteler</button>
     </div>
 
     <div class="table-wrapper">
@@ -296,7 +298,11 @@
         const rows = lines.map(line => line.split(delimiter));
 
         const header = rows[0];
+
+        // kolon indexleri
         const durumIndex = header.findIndex(h => h.toLowerCase().includes('durum'));
+        const yeniIndex  = header.findIndex(h => h.toLowerCase().includes('yeni'));
+
         const dataRows = rows.slice(1).filter(r => r.join('').trim() !== '');
 
         const table = document.getElementById('bonus-table');
@@ -305,7 +311,9 @@
         const thead = document.createElement('thead');
         const headerRow = document.createElement('tr');
 
-        header.forEach(col => {
+        // "Yeni" kolonunu tabloda göstermiyoruz
+        header.forEach((col, i) => {
+          if (i === yeniIndex) return;
           const th = document.createElement('th');
           th.textContent = col.trim();
           headerRow.appendChild(th);
@@ -319,7 +327,17 @@
         dataRows.forEach(cols => {
           const tr = document.createElement('tr');
 
+          // Yeni bilgisini dataset'e yaz (görünmeyen sütun)
+          if (yeniIndex !== -1) {
+            const rawYeni = (cols[yeniIndex] || '').trim().toLowerCase();
+            if (rawYeni === 'evet') {
+              tr.dataset.yeni = 'evet';
+            }
+          }
+
           cols.forEach((col, index) => {
+            if (index === yeniIndex) return; // "Yeni" sütununu atla
+
             const td = document.createElement('td');
             let val = col.trim();
 
@@ -342,6 +360,7 @@
             tr.appendChild(td);
           });
 
+          // satırın durum bilgisini data-* attribute olarak ekle
           if (durumIndex !== -1) {
             const rawDurum = (cols[durumIndex] || '').trim().toLowerCase();
             let key = 'bos';
@@ -361,12 +380,21 @@
         function applyFilter(filter) {
           const rows = document.querySelectorAll('#bonus-table tbody tr');
           rows.forEach(row => {
-            const value = row.dataset.durum || 'bos';
-            if (filter === 'all' || filter === value) {
-              row.style.display = '';
+            const durum = row.dataset.durum || 'bos';
+            const isYeni = row.dataset.yeni === 'evet';
+
+            let visible = true;
+
+            if (filter === 'all') {
+              visible = true;
+            } else if (filter === 'yeni') {
+              visible = isYeni;
             } else {
-              row.style.display = 'none';
+              // yatirimli / yatirimsiz
+              visible = (durum === filter);
             }
+
+            row.style.display = visible ? '' : 'none';
           });
         }
 
