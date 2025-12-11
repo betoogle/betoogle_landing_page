@@ -279,11 +279,22 @@
 
     <!-- Buton grubu -->
     <div class="button-group">
-      <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
+      <a
+        class="download-link"
+        href="assets/guncel_deneme_bonuslari_listesi.xlsx"
+        download
+        id="excel-btn"
+      >
         Listeyi Excel Olarak İndir
       </a>
 
-      <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">
+      <a
+        class="cta-link"
+        href="https://t.me/Betoogle_Bot"
+        target="_blank"
+        rel="noopener"
+        id="bot-cta-btn"
+      >
         Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
       </a>
     </div>
@@ -449,6 +460,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       loadCSV();
 
+      // Paylaş butonu
       const shareBtn = document.getElementById('share-btn');
       if (shareBtn) {
         shareBtn.addEventListener('click', async () => {
@@ -457,6 +469,14 @@
             text: 'Online bahis/casino sitelerinin güncel girişlerini ve deneme bonuslarını buradan takip edebilirsin.',
             url: window.location.href
           };
+
+          // GA event: share_click
+          if (typeof gtag === 'function') {
+            gtag('event', 'share_click', {
+              button_location: 'hero',
+              method: navigator.share ? 'navigator_share' : 'clipboard'
+            });
+          }
 
           if (navigator.share) {
             try {
@@ -471,6 +491,32 @@
             } catch {
               alert('Bağlantı: ' + window.location.href);
             }
+          }
+        });
+      }
+
+      // Excel butonu
+      const excelBtn = document.getElementById('excel-btn');
+      if (excelBtn) {
+        excelBtn.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'excel_download_click', {
+              button_location: 'hero',
+              file_name: 'guncel_deneme_bonuslari_listesi.xlsx'
+            });
+          }
+        });
+      }
+
+      // Bot CTA butonu
+      const botBtn = document.getElementById('bot-cta-btn');
+      if (botBtn) {
+        botBtn.addEventListener('click', () => {
+          if (typeof gtag === 'function') {
+            gtag('event', 'bot_cta_click', {
+              button_location: 'hero',
+              target: 'https://t.me/Betoogle_Bot'
+            });
           }
         });
       }
