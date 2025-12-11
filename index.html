@@ -71,6 +71,69 @@
       line-height: 1.5;
     }
 
+    /* --- BUTON GRUBU --- */
+    .button-group {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .download-link {
+      display: inline-block;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: #14a44d;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .download-link:hover {
+      filter: brightness(1.07);
+    }
+
+    .cta-link {
+      display: inline-block;
+      padding: 10px 26px;
+      border-radius: 999px;
+      background: #16c06a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      max-width: 100%;
+    }
+
+    .cta-link:hover {
+      filter: brightness(1.07);
+    }
+
+    .filter-bar {
+      margin: 16px 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #181818;
+      color: #ddd;
+    }
+
+    .filter-btn.active {
+      background: #14a44d;
+      color: #fff;
+    }
+
     .table-wrapper {
       margin-top: 8px;
       border-radius: 12px;
@@ -141,63 +204,6 @@
       border: 1px solid rgba(40, 167, 69, 0.3);
     }
 
-    .download-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 9px 16px;
-      border-radius: 999px;
-      background: #14a44d;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .download-link:hover {
-      filter: brightness(1.07);
-    }
-
-    /* ✅ Yeni, daha uzun buton */
-    .cta-link {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 26px;
-      border-radius: 999px;
-      background: #16c06a;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      max-width: 100%;
-    }
-
-    .cta-link:hover {
-      filter: brightness(1.07);
-    }
-
-    .filter-bar {
-      margin: 16px 0 8px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .filter-btn {
-      border: 0;
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-size: 12px;
-      cursor: pointer;
-      background: #181818;
-      color: #ddd;
-    }
-
-    .filter-btn.active {
-      background: #14a44d;
-      color: #fff;
-    }
-
     footer {
       margin-top: 28px;
       font-size: 11px;
@@ -248,15 +254,16 @@
       bota gidin ve site adını yazın. Bot size sitenin güncel giriş adresini verecektir.
     </p>
 
-    <!-- Excel indirme butonu -->
-    <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
-      Listeyi Excel Olarak İndir
-    </a>
+    <!-- Buton grubu -->
+    <div class="button-group">
+      <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
+        Listeyi Excel Olarak İndir
+      </a>
 
-    <!-- ✅ Yeni uzun buton -->
-    <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">
-      Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
-    </a>
+      <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">
+        Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
+      </a>
+    </div>
 
     <div class="filter-bar">
       <button type="button" class="filter-btn active" data-filter="all">Tümü</button>
