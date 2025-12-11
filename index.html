@@ -43,7 +43,7 @@
     }
 
     .logo-img {
-      width: 64px; /* büyük gelirse 56 veya 48 yapabilirsin */
+      width: 64px;
       height: auto;
       margin-bottom: 4px;
     }
@@ -77,7 +77,7 @@
       background: #111;
       padding: 10px;
       box-shadow: 0 0 0 1px #222;
-      overflow-x: auto; /* telefonda yatay kaydırma */
+      overflow-x: auto;
     }
 
     table {
@@ -105,7 +105,6 @@
       background: #101010;
     }
 
-    /* Kolon genişlikleri: site / şartlar / durum (masaüstü için) */
     th:first-child,
     td:first-child {
       width: 10%;
@@ -158,8 +157,26 @@
       filter: brightness(1.07);
     }
 
+    /* ✅ Yeni, daha uzun buton */
+    .cta-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 26px;
+      border-radius: 999px;
+      background: #16c06a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      max-width: 100%;
+    }
+
+    .cta-link:hover {
+      filter: brightness(1.07);
+    }
+
     .filter-bar {
-      margin: 12px 0 8px;
+      margin: 16px 0 8px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -187,14 +204,12 @@
       color: #666;
     }
 
-    /* --- MOBİL DÜZENİ: TABLO EKRANA TAM OTURSUN --- */
     @media (max-width: 768px) {
       .container {
         max-width: 100%;
         padding: 20px 8px 32px;
       }
 
-      /* Kolon genişliklerini serbest bırak, tabloyu tam ekrana oturt */
       th:first-child,
       td:first-child,
       th:nth-child(2),
@@ -233,15 +248,21 @@
       bota gidin ve site adını yazın. Bot size sitenin güncel giriş adresini verecektir.
     </p>
 
+    <!-- Excel indirme butonu -->
     <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
       Listeyi Excel Olarak İndir
+    </a>
+
+    <!-- ✅ Yeni uzun buton -->
+    <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">
+      Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
     </a>
 
     <div class="filter-bar">
       <button type="button" class="filter-btn active" data-filter="all">Tümü</button>
       <button type="button" class="filter-btn" data-filter="yatirimli">Yatırımlı</button>
       <button type="button" class="filter-btn" data-filter="yatirimsiz">Yatırımsız</button>
-      <button type="button" class="filter-btn" data-filter="bos">Durum Yok</button>
+      <!-- Durum Yok butonu kaldırıldı -->
     </div>
 
     <div class="table-wrapper">
@@ -264,7 +285,6 @@
         const lines = text.trim().split(/\r?\n/);
         if (!lines.length) return;
 
-        // Türkçe Excel genelde ; kullanır, ona göre ayıralım
         const firstLine = lines[0];
         const delimiter = firstLine.includes(';') ? ';' : ',';
 
@@ -277,7 +297,6 @@
         const table = document.getElementById('bonus-table');
         table.innerHTML = '';
 
-        // THEAD
         const thead = document.createElement('thead');
         const headerRow = document.createElement('tr');
 
@@ -290,7 +309,6 @@
         thead.appendChild(headerRow);
         table.appendChild(thead);
 
-        // TBODY
         const tbody = document.createElement('tbody');
 
         dataRows.forEach(cols => {
@@ -300,7 +318,6 @@
             const td = document.createElement('td');
             let val = col.trim();
 
-            // "durum" kolonuna rozet uygula
             if (header[index] && header[index].toLowerCase().includes('durum')) {
               const span = document.createElement('span');
               const lower = val.toLowerCase();
@@ -320,7 +337,6 @@
             tr.appendChild(td);
           });
 
-          // satırın durum bilgisini data-* attribute olarak ekle
           if (durumIndex !== -1) {
             const rawDurum = (cols[durumIndex] || '').trim().toLowerCase();
             let key = 'bos';
@@ -337,7 +353,6 @@
 
         table.appendChild(tbody);
 
-        // Filtre fonksiyonu
         function applyFilter(filter) {
           const rows = document.querySelectorAll('#bonus-table tbody tr');
           rows.forEach(row => {
@@ -350,7 +365,6 @@
           });
         }
 
-        // Buton click eventleri
         const buttons = document.querySelectorAll('.filter-btn');
         buttons.forEach(btn => {
           btn.addEventListener('click', () => {
@@ -361,7 +375,6 @@
           });
         });
 
-        // Varsayılan filtre
         applyFilter('all');
 
       } catch (e) {
