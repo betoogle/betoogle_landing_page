@@ -111,6 +111,31 @@
       filter: brightness(1.07);
     }
 
+    /* --- PAYLAŞ SATIRI --- */
+    .share-row {
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    .share-btn {
+      border-radius: 999px;
+      border: 1px solid #2a2a2a;
+      background: #141414;
+      color: #fff;
+      padding: 4px 12px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .share-btn:hover {
+      background: #1b1b1b;
+    }
+
     .filter-bar {
       margin: 16px 0 8px;
       display: flex;
@@ -261,6 +286,12 @@
       <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank" rel="noopener">
         Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
       </a>
+    </div>
+
+    <!-- Paylaş satırı -->
+    <div class="share-row">
+      <span>Bu sayfayı arkadaşlarınla paylaş</span>
+      <button type="button" class="share-btn" id="share-btn">Paylaş</button>
     </div>
 
     <div class="filter-bar">
@@ -415,7 +446,35 @@
       }
     }
 
-    document.addEventListener('DOMContentLoaded', loadCSV);
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCSV();
+
+      const shareBtn = document.getElementById('share-btn');
+      if (shareBtn) {
+        shareBtn.addEventListener('click', async () => {
+          const shareData = {
+            title: 'Betoog­le — Güncel Deneme Bonusları Listesi',
+            text: 'Online bahis/casino sitelerinin güncel girişlerini ve deneme bonuslarını buradan takip edebilirsin.',
+            url: window.location.href
+          };
+
+          if (navigator.share) {
+            try {
+              await navigator.share(shareData);
+            } catch (e) {
+              // kullanıcı paylaşımı iptal ederse sessiz geç
+            }
+          } else {
+            try {
+              await navigator.clipboard.writeText(window.location.href);
+              alert('Bağlantı kopyalandı, istediğin yere yapıştırabilirsin.');
+            } catch {
+              alert('Bağlantı: ' + window.location.href);
+            }
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
