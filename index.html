@@ -6,7 +6,7 @@
   <title>Betoog­le — Güncel Deneme Bonusları Listesi</title>
   <meta name="description" content="Betoog­le, sitelerin değişen adreslerini anında bulmanızı sağlar. Sahte linkleri filtreler. Para işlemi yoktur." />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB4K41T179"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,9 +16,7 @@
   </script>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -28,30 +26,56 @@
       text-align: center;
     }
 
-    /* ✅ Sağ üst "Güncellenme Tarihi" */
+    /* ==============================
+       GÜNCELLENME TARİHİ (FIXED)
+       ============================== */
     .last-updated{
-      position: fixed;            /* her zaman sağ üstte kalsın */
+      position: fixed;
       top: 16px;
       right: 16px;
       z-index: 9999;
-
       font-size: 13px;
       color: rgba(255,255,255,.85);
       background: rgba(0,0,0,.45);
       border: 1px solid rgba(255,255,255,.08);
-      padding: 8px 10px;
-      border-radius: 10px;
+      padding: 8px 12px;
+      border-radius: 12px;
       backdrop-filter: blur(8px);
-    }
-    .last-updated span{
-      font-weight: 700;
-      color: #ffffff;
+      white-space: nowrap;
     }
 
+    .last-updated span{
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* ==============================
+       CONTAINER
+       ============================== */
     .container {
       max-width: 720px;
       margin: 0 auto;
       padding: 24px 12px 40px;
+    }
+
+    /* ==============================
+       MOBİL GARANTİ ÇÖZÜM
+       ============================== */
+    @media (max-width: 520px) {
+      .container {
+        padding-top: 92px; /* LOGO + TARİH ÇAKIŞMAZ */
+      }
+
+      .last-updated {
+        top: 12px;
+        right: 12px;
+        font-size: 12px;
+        padding: 6px 10px;
+        max-width: calc(100vw - 24px);
+        white-space: normal;
+        text-align: right;
+        line-height: 1.2;
+      }
     }
 
     .brand-link {
@@ -64,19 +88,7 @@
 
     .logo-img {
       width: 64px;
-      height: auto;
       margin-bottom: 4px;
-    }
-
-    .subtitle a:link,
-    .subtitle a:visited {
-      color: #fff !important;
-      text-decoration: none;
-    }
-
-    .subtitle a:hover {
-      color: #ddd !important;
-      text-decoration: underline;
     }
 
     h1 {
@@ -91,7 +103,6 @@
       line-height: 1.5;
     }
 
-    /* --- BUTON GRUBU --- */
     .button-group {
       margin-top: 10px;
       display: flex;
@@ -100,38 +111,27 @@
       align-items: center;
     }
 
-    .download-link {
+    .download-link,
+    .cta-link {
       display: inline-block;
-      padding: 9px 16px;
       border-radius: 999px;
-      background: #14a44d;
       color: #fff;
       text-decoration: none;
       font-size: 13px;
+    }
+
+    .download-link {
+      padding: 9px 16px;
+      background: #14a44d;
       font-weight: 500;
     }
 
-    .download-link:hover {
-      filter: brightness(1.07);
-    }
-
     .cta-link {
-      display: inline-block;
       padding: 10px 26px;
-      border-radius: 999px;
       background: #16c06a;
-      color: #fff;
-      text-decoration: none;
-      font-size: 13px;
       font-weight: 600;
-      max-width: 100%;
     }
 
-    .cta-link:hover {
-      filter: brightness(1.07);
-    }
-
-    /* --- PAYLAŞ SATIRI --- */
     .share-row {
       margin-top: 6px;
       display: flex;
@@ -150,10 +150,6 @@
       padding: 4px 12px;
       font-size: 12px;
       cursor: pointer;
-    }
-
-    .share-btn:hover {
-      background: #1b1b1b;
     }
 
     .filter-bar {
@@ -199,38 +195,15 @@
       padding: 9px 10px;
       border-bottom: 1px solid #222;
       font-size: 13px;
-      vertical-align: top;
     }
 
     th {
       background: #181818;
       position: sticky;
       top: 0;
-      z-index: 1;
-    }
-
-    tr:nth-child(even) td {
-      background: #101010;
-    }
-
-    th:first-child,
-    td:first-child {
-      width: 10%;
-    }
-
-    th:nth-child(2),
-    td:nth-child(2) {
-      width: 40%;
-    }
-
-    th:nth-child(3),
-    td:nth-child(3) {
-      width: 10%;
-      text-align: center;
     }
 
     .badge {
-      display: inline-block;
       padding: 3px 8px;
       border-radius: 999px;
       font-size: 11px;
@@ -238,15 +211,13 @@
     }
 
     .badge.yatirimli {
-      background: rgba(255, 193, 7, 0.12);
+      background: rgba(255,193,7,.12);
       color: #ffc107;
-      border: 1px solid rgba(255, 193, 7, 0.3);
     }
 
     .badge.yatirimsiz {
-      background: rgba(40, 167, 69, 0.12);
+      background: rgba(40,167,69,.12);
       color: #28a745;
-      border: 1px solid rgba(40, 167, 69, 0.3);
     }
 
     footer {
@@ -254,298 +225,44 @@
       font-size: 11px;
       color: #666;
     }
-
-    @media (max-width: 768px) {
-      .container {
-        max-width: 100%;
-        padding: 20px 8px 32px;
-      }
-
-      th:first-child,
-      td:first-child,
-      th:nth-child(2),
-      td:nth-child(2),
-      th:nth-child(3),
-      td:nth-child(3) {
-        width: auto !important;
-      }
-
-      table {
-        width: 100%;
-        min-width: 100%;
-      }
-
-      td {
-        white-space: normal;
-        word-wrap: break-word;
-      }
-
-      .table-wrapper {
-        padding: 8px 0;
-      }
-    }
   </style>
 </head>
+
 <body>
-  <!-- ✅ Sağ üst köşe güncelleme tarihi (MANUEL) -->
+
+  <!-- 🔒 MANUEL GÜNCELLEME TARİHİ -->
   <div class="last-updated">
-    Güncellenme Tarihi: <span id="lastUpdatedText">06.01.2026</span>
+    Güncellenme Tarihi: <span>06.01.2026</span>
   </div>
 
   <div class="container">
-    <a href="https://t.me/Betoogle_Bot" class="brand-link" target="_blank" rel="noopener">
-      <img src="assets/logo.png" alt="Betoogle" class="logo-img">
-      <h1>Betoog­le</h1>
+    <a href="https://t.me/Betoogle_Bot" class="brand-link" target="_blank">
+      <img src="assets/logo.png" class="logo-img" alt="Betoogle">
+      <h1>Betoogle</h1>
     </a>
 
     <p class="subtitle">
       Betoogle_bot Online Bahis/Casino sitelerinin güncel girişlerini anında bulup sizinle paylaşan bir programdır.
     </p>
 
-    <!-- Buton grubu -->
     <div class="button-group">
-      <a
-        class="download-link"
-        href="assets/guncel_deneme_bonuslari_listesi.xlsx"
-        download
-        id="excel-btn"
-      >
+      <a class="download-link" href="assets/guncel_deneme_bonuslari_listesi.xlsx" download>
         Listeyi Excel Olarak İndir
       </a>
-
-      <a
-        class="cta-link"
-        href="https://t.me/Betoogle_Bot"
-        target="_blank"
-        rel="noopener"
-        id="bot-cta-btn"
-      >
+      <a class="cta-link" href="https://t.me/Betoogle_Bot" target="_blank">
         Sitelerin Güncel Girişlerini Anında Bulmak İçin Tıklayın
       </a>
     </div>
 
-    <!-- Paylaş satırı -->
     <div class="share-row">
       <span>Bu sayfayı arkadaşlarınla paylaş</span>
-      <button type="button" class="share-btn" id="share-btn">Paylaş</button>
-    </div>
-
-    <div class="filter-bar">
-      <button type="button" class="filter-btn active" data-filter="all">Tümü</button>
-      <button type="button" class="filter-btn" data-filter="yatirimli">Yatırımlı</button>
-      <button type="button" class="filter-btn" data-filter="yatirimsiz">Yatırımsız</button>
-      <button type="button" class="filter-btn" data-filter="yeni">Yeni Siteler</button>
-    </div>
-
-    <div class="table-wrapper">
-      <table id="bonus-table">
-        <!-- JS buraya tabloyu basacak -->
-      </table>
+      <button class="share-btn">Paylaş</button>
     </div>
 
     <footer>
-      © 2025 Betoog­le — Bu bir link doğrulama aracıdır.
+      © 2025 Betoogle — Bu bir link doğrulama aracıdır.
     </footer>
   </div>
 
-  <script>
-    async function loadCSV() {
-      try {
-        const res = await fetch('assets/guncel_deneme_bonuslari_listesi.csv');
-        const text = await res.text();
-
-        const lines = text.trim().split(/\r?\n/);
-        if (!lines.length) return;
-
-        const firstLine = lines[0];
-        const delimiter = firstLine.includes(';') ? ';' : ',';
-
-        const rows = lines.map(line => line.split(delimiter));
-
-        const header = rows[0];
-
-        // kolon indexleri
-        const durumIndex = header.findIndex(h => h.toLowerCase().includes('durum'));
-        const yeniIndex  = header.findIndex(h => h.toLowerCase().includes('yeni'));
-
-        const dataRows = rows.slice(1).filter(r => r.join('').trim() !== '');
-
-        const table = document.getElementById('bonus-table');
-        table.innerHTML = '';
-
-        const thead = document.createElement('thead');
-        const headerRow = document.createElement('tr');
-
-        // "Yeni" kolonunu tabloda göstermiyoruz
-        header.forEach((col, i) => {
-          if (i === yeniIndex) return;
-          const th = document.createElement('th');
-          th.textContent = col.trim();
-          headerRow.appendChild(th);
-        });
-
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
-
-        const tbody = document.createElement('tbody');
-
-        dataRows.forEach(cols => {
-          const tr = document.createElement('tr');
-
-          // Yeni bilgisini dataset'e yaz (görünmeyen sütun)
-          if (yeniIndex !== -1) {
-            const rawYeni = (cols[yeniIndex] || '').trim().toLowerCase();
-            if (rawYeni === 'evet') {
-              tr.dataset.yeni = 'evet';
-            }
-          }
-
-          cols.forEach((col, index) => {
-            if (index === yeniIndex) return; // "Yeni" sütununu atla
-
-            const td = document.createElement('td');
-            let val = col.trim();
-
-            if (header[index] && header[index].toLowerCase().includes('durum')) {
-              const span = document.createElement('span');
-              const lower = val.toLowerCase();
-              span.textContent = val;
-
-              if (lower.includes('yatırımsız') || lower.includes('yatirimsiz')) {
-                span.className = 'badge yatirimsiz';
-              } else if (lower.includes('yatırımlı') || lower.includes('yatirimli')) {
-                span.className = 'badge yatirimli';
-              }
-
-              td.appendChild(span);
-            } else {
-              td.textContent = val;
-            }
-
-            tr.appendChild(td);
-          });
-
-          // satırın durum bilgisini data-* attribute olarak ekle
-          if (durumIndex !== -1) {
-            const rawDurum = (cols[durumIndex] || '').trim().toLowerCase();
-            let key = 'bos';
-            if (rawDurum.includes('yatırımsız') || rawDurum.includes('yatirimsiz')) {
-              key = 'yatirimsiz';
-            } else if (rawDurum.includes('yatırımlı') || rawDurum.includes('yatirimli')) {
-              key = 'yatirimli';
-            }
-            tr.dataset.durum = key;
-          }
-
-          tbody.appendChild(tr);
-        });
-
-        table.appendChild(tbody);
-
-        function applyFilter(filter) {
-          const rows = document.querySelectorAll('#bonus-table tbody tr');
-          rows.forEach(row => {
-            const durum = row.dataset.durum || 'bos';
-            const isYeni = row.dataset.yeni === 'evet';
-
-            let visible = true;
-
-            if (filter === 'all') {
-              visible = true;
-            } else if (filter === 'yeni') {
-              visible = isYeni;
-            } else {
-              // yatirimli / yatirimsiz
-              visible = (durum === filter);
-            }
-
-            row.style.display = visible ? '' : 'none';
-          });
-        }
-
-        const buttons = document.querySelectorAll('.filter-btn');
-        buttons.forEach(btn => {
-          btn.addEventListener('click', () => {
-            const filter = btn.dataset.filter;
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            applyFilter(filter);
-          });
-        });
-
-        applyFilter('all');
-
-      } catch (e) {
-        console.error(e);
-        document.querySelector('.table-wrapper').innerHTML =
-          '<p>Liste şu anda yüklenemedi. Lütfen daha sonra tekrar deneyin.</p>';
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadCSV();
-
-      // Paylaş butonu
-      const shareBtn = document.getElementById('share-btn');
-      if (shareBtn) {
-        shareBtn.addEventListener('click', async () => {
-          const shareData = {
-            title: 'Betoog­le — Güncel Deneme Bonusları Listesi',
-            text: 'Online bahis/casino sitelerinin güncel girişlerini ve deneme bonuslarını buradan takip edebilirsin.',
-            url: window.location.href
-          };
-
-          // GA event: share_click
-          if (typeof gtag === 'function') {
-            gtag('event', 'share_click', {
-              button_location: 'hero',
-              method: navigator.share ? 'navigator_share' : 'clipboard'
-            });
-          }
-
-          if (navigator.share) {
-            try {
-              await navigator.share(shareData);
-            } catch (e) {
-              // kullanıcı paylaşımı iptal ederse sessiz geç
-            }
-          } else {
-            try {
-              await navigator.clipboard.writeText(window.location.href);
-              alert('Bağlantı kopyalandı, istediğin yere yapıştırabilirsin.');
-            } catch {
-              alert('Bağlantı: ' + window.location.href);
-            }
-          }
-        });
-      }
-
-      // Excel butonu
-      const excelBtn = document.getElementById('excel-btn');
-      if (excelBtn) {
-        excelBtn.addEventListener('click', () => {
-          if (typeof gtag === 'function') {
-            gtag('event', 'excel_download_click', {
-              button_location: 'hero',
-              file_name: 'guncel_deneme_bonuslari_listesi.xlsx'
-            });
-          }
-        });
-      }
-
-      // Bot CTA butonu
-      const botBtn = document.getElementById('bot-cta-btn');
-      if (botBtn) {
-        botBtn.addEventListener('click', () => {
-          if (typeof gtag === 'function') {
-            gtag('event', 'bot_cta_click', {
-              button_location: 'hero',
-              target: 'https://t.me/Betoogle_Bot'
-            });
-          }
-        });
-      }
-    });
-  </script>
 </body>
 </html>
