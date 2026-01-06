@@ -6,13 +6,12 @@
   <title>Betoog­le — Güncel Deneme Bonusları Listesi</title>
   <meta name="description" content="Betoog­le, sitelerin değişen adreslerini anında bulmanızı sağlar. Sahte linkleri filtreler. Para işlemi yoktur." />
 
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB4K41T179"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-QB4K41T179');
   </script>
 
@@ -27,6 +26,26 @@
       background: #050505;
       color: #fff;
       text-align: center;
+    }
+
+    /* ✅ Sağ üst "Güncellenme Tarihi" */
+    .last-updated{
+      position: fixed;            /* her zaman sağ üstte kalsın */
+      top: 16px;
+      right: 16px;
+      z-index: 9999;
+
+      font-size: 13px;
+      color: rgba(255,255,255,.85);
+      background: rgba(0,0,0,.45);
+      border: 1px solid rgba(255,255,255,.08);
+      padding: 8px 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
+    }
+    .last-updated span{
+      font-weight: 700;
+      color: #ffffff;
     }
 
     .container {
@@ -268,6 +287,11 @@
   </style>
 </head>
 <body>
+  <!-- ✅ Sağ üst köşe güncelleme tarihi (MANUEL) -->
+  <div class="last-updated">
+    Güncellenme Tarihi: <span id="lastUpdatedText">06.01.2026</span>
+  </div>
+
   <div class="container">
     <a href="https://t.me/Betoogle_Bot" class="brand-link" target="_blank" rel="noopener">
       <img src="assets/logo.png" alt="Betoogle" class="logo-img">
