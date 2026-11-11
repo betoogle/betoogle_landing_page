@@ -166,6 +166,31 @@
 
     .share-btn:hover { background: #1b1b1b; }
 
+    .bonus-notice {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border: 1px solid #514832;
+      border-radius: 12px;
+      background: #171715;
+      color: #e2e2de;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    .bonus-notice h2 { margin: 0 0 8px; font-size: 15px; color: #fff; }
+    .bonus-notice h2 span { color: #edc45b; margin-right: 6px; }
+    .bonus-notice p { margin: 0; }
+    .bonus-notice summary {
+      cursor: pointer;
+      min-height: 44px;
+      padding: 12px 0 6px;
+      color: #e5ce96;
+    }
+    .bonus-notice summary:focus-visible { outline: 2px solid #edc45b; outline-offset: 3px; border-radius: 3px; }
+    .bonus-notice details[open] summary { margin-bottom: 8px; }
+    .bonus-notice .notice-details p + p { margin-top: 10px; }
+
     .filter-bar {
       margin: 16px 0 8px;
       display: flex;
@@ -278,7 +303,7 @@
 <body>
   <!-- ✅ Sağ üst köşe güncelleme tarihi (MANUEL) -->
   <div class="last-updated">
-    Güncellenme Tarihi: <span id="lastUpdatedText">22.08.2026</span>
+    Güncellenme Tarihi: <span id="lastUpdatedText">11.11.2026</span>
   </div>
 
   <div class="container">
@@ -310,6 +335,19 @@
       <span>Bu sayfayı arkadaşlarınla paylaş</span>
       <button type="button" class="share-btn" id="share-btn">Paylaş</button>
     </div>
+
+    <section class="bonus-notice" aria-labelledby="bonus-notice-title">
+      <h2 id="bonus-notice-title"><span aria-hidden="true">⚠️</span> Deneme Bonusları Hakkında Önemli Bilgilendirme</h2>
+      <p>Listemizde yer alan deneme bonusları, son güncelleme tarihinde geçerli olan bilgiler doğrultusunda hazırlanmıştır. Siteler kampanya koşullarını, yatırım gereksinimlerini ve çekim limitlerini önceden bildirmeksizin değiştirebilir.</p>
+      <details>
+        <summary>Detaylı bilgilendirmeyi okuyun</summary>
+        <div class="notice-details">
+          <p>Bazı siteler; IP çakışması, çoklu hesap veya kampanya kurallarının ihlali gibi gerekçelerle bonus kazançlarının çekimini reddedebilir.</p>
+          <p><strong>Bir sitenin lisanslı olması, bonus kazançlarının ödeneceğini veya sitenin güvenilir olduğunu garanti etmez.</strong></p>
+          <p>Betoogle, listelenen sitelerin bonus ödemelerinden sorumlu değildir. Özellikle yatırımlı kampanyalara katılmadan önce güncel şartları kontrol etmenizi ve olası finansal riskleri değerlendirmenizi öneririz.</p>
+        </div>
+      </details>
+    </section>
 
     <!-- ✅ Filtreler (geri geldi) -->
     <div class="filter-bar">
